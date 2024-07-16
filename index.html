@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!-- 
+author:	Mark Jose
+date:	07/14/2024
+notes:	Final Project COMP 2132
+-->
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>COMP2132 A01232391</title>
+        <script src="javascript/jquery-3.7.1.min.js" defer></script>
+        <script src="javascript/my-script.js" defer></script>  
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/layout.css">
+        <link rel="stylesheet" href="css/popup.css">
+        <link rel="stylesheet" href="css/presentation.css">
+    </head>
+
+    <body>
+        <header class="header">
+            <div id="flex_container">  
+            <h1>Dice Roller</h1><br>
+            <h2> by Mark Jose</h2>
+        </header>
+
+        <main>
+            <div class="body_style body_content">
+                <p id="introduction">This is a dice game where you play against the computer, rolling a pair of dice
+                     for three rounds. After the third roll of the dice, the player with the 
+                     highest score wins.</p>
+                <article id="turnBox" class="center-center">
+                    <p>TURN: <span id="turnNum"></span><br><br><span id="whoTurn"></span></p>
+                </article>
+
+                <article id="game-text" class="center-center">
+                    <p id="outcomeString"></p>
+                </article>
+
+                <section id="displayGame">
+                    <section>
+                        <div class="dice-center">
+                            <div >
+                                <img src="images/dice-images/dice-six-faces-1.png" id="firstUserDice" class="diceImg">
+                                <img src="images/dice-images/dice-six-faces-6.png" id="secondUserDice" class="diceImg">    
+                            </div>
+                            <p>Score:<br><br><span id="userShortScore">0</span></p>
+                        </div>
+                        <div class="playerField center-center">
+                            <h3>User</h3>
+                            <button id="btn1">Roll</button>
+                        </div>
+                        <div class="scoreCard center-center">
+                            <p>Total Score:<br><br><span id="userScore"></span></p>
+                        </div>
+
+                    </section>
+                    <section>
+                        <div class="dice-center">
+                            <div>
+                                <img src="images/dice-images/dice-six-faces-1.png" id="firstCompDice" class="diceImg">
+                                <img src="images/dice-images/dice-six-faces-6.png" id="secondCompDice" class="diceImg">
+                            </div>
+                            <p>Score:<br><br><span id="compShortScore">0</span></p>
+                        </div>
+                        <div class="playerField center-center">
+                            <h3>Computer</h3>
+                            <button id="btn2">Reset</button>
+                        </div>
+                        <div class="scoreCard center-center">
+                            <p>Total Score:<br><br><span id="compScore"></span></p>
+                        </div>
+                    </section>
+
+                </section>
+                <section id="credit">
+                    <h4>Credit</h4>
+                    <p>Dice by Christopher T. Howlett from 
+                        <a href="https://thenounproject.com/browse/icons/term/dice/" target="_blank" 
+                    title="Dice Icons">Noun Project</a> (CC BY 3.0)
+                    <br><br>
+                    <a href="https://www.freepik.com/free-vector/red-geometric-background_1154512.htm#query=red%20background&position=30&from_view=keyword&track=ais_user&uuid=fa2cf191-6181-4caa-930e-884cc0ee6c54">
+                        Image by creativetoons on Freepik</a>
+                    </p>
+                </section>
+            </div>
+        </main>
+
+
+        <footer class="footer">
+            <ul id="footNavigation">
+                <li>COMP2132</li>
+                <li>Mark Jose</li>
+                <li>A01232391</li>
+                <li>mark_jose@bcit.ca</li>
+            </ul>
+            </div>
+        </footer>
+    </body>
+</html>
